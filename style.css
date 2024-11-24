@@ -104,16 +104,6 @@ h1 {
     font-weight: 500;
     margin-bottom: 25px;
 }
-.border {
-    content: '';
-    border: 1px solid lightgrey;
-    width: 90%;
-    margin-left: 1em;
-    margin-bottom: 6em;
-    padding: 0;
-    position: absolute;
-    left: 0;
-}
 .Instructions {
     margin-bottom: 1.5em;
 }
