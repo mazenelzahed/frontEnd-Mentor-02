@@ -1,0 +1,209 @@
+/*! *****Imports***** */
+@font-face {
+    font-family: 'outfit';
+    src: url(./assets/fonts/outfit/Outfit-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'outfit';
+    src: url(./assets/fonts/outfit/Outfit-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'outfit';
+    src: url(./assets/fonts/outfit/Outfit-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'young-serif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    font-weight: 400;
+}
+/*! *****Reset***** */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+/*! *****Golbal***** */
+:root {
+--White: hsl(0, 0%, 100%);
+--Stone100: hsl(30, 54%, 90%);
+--Stone150: hsl(30, 18%, 87%);
+--Stone600: hsl(30, 10%, 34%);
+--Stone900: hsl(24, 5%, 18%);
+--Brown800: hsl(14, 45%, 36%);
+--Rose800: hsl(332, 51%, 32%);
+--Rose50: hsl(330, 100%, 98%);
+}
+main > *:not(:first-child) {
+    font-size: 16px;
+    padding-left: 1em;
+    background-color: var(--White);
+    width: 100%;
+}
+/*! *****Body Content***** */
+.header {
+    width: 100%;
+    text-align: center;
+}
+h1 {
+    font-family: 'young-serif';
+    font-weight: 400;
+    color: var(--Stone900);
+    margin-left: .5em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+.content p {
+    font-family: 'outfit';
+    color: var(--Stone900);
+    font-size: 17.5px;
+    margin-left: .5em;
+    margin-bottom: 2em;
+    padding-right: .5em;
+}
+.Preparation-time {
+    padding: 20px;
+    background-color: var(--Rose50) !important;
+    border-radius: 5px;
+    max-width: 90%;
+    margin-bottom: 25px;
+}
+.Preparation-time h2 {
+    color: var(--Rose800);
+    font-weight: bold;
+    margin: 0;
+}
+.list {
+    padding: 0;
+    margin: 10px 20px 20px 20px;
+}
+.list li {
+    font-family: 'outfit';
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    padding-right: 5em;
+    margin-bottom: 15px;
+}
+.list li::before {
+    content: '•';
+    padding-right: 10px;
+    font-weight: bold;
+}
+.Ingredients  h2{
+    color: var(--Brown800);
+    font-family: 'young-serif';
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.border {
+    content: '';
+    border: 1px solid lightgrey;
+    width: 90%;
+    margin-left: 1em;
+    margin-bottom: 6em;
+    padding: 0;
+    position: absolute;
+    left: 0;
+}
+.Instructions {
+    margin-bottom: 1.5em;
+}
+.Instructions h2 {
+    color: var(--Brown800);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: bold;
+    font-size: 30px;
+}
+.order {
+    font-size: 18.5px;
+    padding: 0;
+    margin: 2px 5px 40px 10px;
+}
+.order li {
+    font-family: 'outfit';
+    font-weight: 400;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    margin-left: 15px;
+}
+.Nutrition h2{
+    color: var(--Brown800);
+    font-weight: 800;
+    font-size: 30px;
+    margin: 1em;
+}
+.Nutrition p {
+    font-family: 'outfit';
+    color: var(--Stone600);
+    padding-left: 1em;
+    padding-bottom: 1.5em;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5em;
+    font-family: 'outfit';
+    
+}
+tr:not(:last-child){
+    border-bottom: 1px solid lightgray;
+}
+td {
+    padding-left: 2em;
+    height: 50px;
+    /* vertical-align: middle; */
+}
+.brown {
+    color: var(--Brown800);
+    font-weight: 600;
+}
+/*! *****Media Quary***** */
+@media screen and (min-width : 800px) {
+    body {
+        background-color: var(--Stone100);
+    }
+    main {
+        background-color: var(--White);
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 2em;
+        margin-top: 5em;
+        overflow: hidden;
+        border-radius: 25px   ;
+        -webkit-border-radius: 25px   ;
+        -moz-border-radius: 25px   ;
+        -ms-border-radius: 25px   ;
+        -o-border-radius: 25px   ;
+        margin-bottom: 5em;
+    }
+    main > *:not(:first-child) {
+        padding-left: 3em;
+    }
+    .header img {
+        width: 95%;
+        margin: 0 auto;
+        padding: 1em;
+        border-radius: 1.5em;
+        -webkit-border-radius: 1.5em;
+        -moz-border-radius: 1.5em;
+        -ms-border-radius: 1.5em;
+        -o-border-radius: 1.5em;
+    }
+    .border {
+        content: '';
+        border: 1px solid lightgrey;
+        width: 75%;
+        margin-left: 11em;
+        position: absolute;
+    }
+}
